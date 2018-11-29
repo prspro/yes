@@ -1,6 +1,6 @@
 .situations
     //overflow: hidden
-    padding: 210px 0 314px 0
+    padding: 210px 0 270px 0
     background: url('../img/ellipse_bg.png') no-repeat 
     //background-size: cover
     background-size: 3060px 2100px
@@ -68,8 +68,18 @@
             .txt
                 margin-right: 30px
                 max-width: 265px
+                position: relative
                 .caption
                     left: 100%
+                &::after
+                    z-index: 1
+                    content: ""
+                    position: absolute
+                    width: 145px
+                    height: 19px
+                    top: calc(100% + 60px)
+                    left: calc(100% - 90px)
+                    background: url('../img/svg/wave.svg') no-repeat center
             .img-box
                 width: 457px
                 .img
@@ -101,6 +111,17 @@
                 margin-right: 30px
                 .caption
                     left: 100%
+                &::after
+                    z-index: 1
+                    content: ""
+                    position: absolute
+                    width: 23px
+                    height: 23px
+                    bottom: calc(100% + 15px)
+                    right: calc(100% + 120px)
+                    background-color: $pseudoBlueBg
+                    border-radius: 50%
+                    //background: url('../img/svg/wave.svg') no-repeat center
             .img-box
                 width: 345px
                 .img
