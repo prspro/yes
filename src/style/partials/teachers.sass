@@ -1,0 +1,79 @@
+.teachers
+	padding: 100px 0 150px 0 
+	.container
+		position: relative
+		&::before
+			content: ""
+			position: absolute
+			height: 23px
+			width: 23px
+			background-color: $pseudoBlueBg
+			border-radius: 50%
+			left: -110px
+			top: 252px
+		&::after
+			content: ""
+			z-index: -1
+			position: absolute
+			height: 2px
+			left: 0
+			top: 262px
+			width: 2000px
+			background-color: $pseudoGrayBg2
+			transform: translate(-1000px)
+			//background-color: red
+		.title
+			font-family: $GilroyExtraBold
+			font-size: 45px
+			text-transform: uppercase
+			margin-bottom: 50px
+		.description-bar
+			display: flex
+			position: relative
+			&::after
+				content: ""
+				z-index: -1
+				position: absolute
+				height: 280px
+				width: 280px
+				border-radius: 50%
+				border: 80px solid $pseudoGrayBg
+				right: 0
+				top: 0
+				transform: translate(236px, -147px)
+			.waves
+				position: absolute
+				top: 157px
+				right: -237px
+				.wave
+					width: 66px
+					height: 10px
+					margin-bottom: 2px
+					background: url('../img/svg/wave.svg') no-repeat center
+			.description
+				margin-right: 30px
+				&:last-of-type
+					margin-right: 0
+				.photo
+					display: block
+					line-height: 0
+					margin-bottom: 30px
+					margin-left: auto
+					margin-right: auto
+					width: 360px
+					height: 286px
+					&--1
+						background: url('../img/1.jpg') no-repeat center
+					&--2
+						background: url('../img/2.jpg') no-repeat center
+					&--3
+						background: url('../img/3.jpg') no-repeat center
+				.lil-title
+					font-family: $GilroyExtraBold
+					font-size: 18px
+					margin-bottom: 15px
+				.text
+					font-family: $GilroyLight
+					font-size: 14px
+					line-height: 1.7
+					color: $pseudoBlackTxt
