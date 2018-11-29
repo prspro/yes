@@ -1,8 +1,9 @@
 .situations
     //overflow: hidden
-    padding: 210px 0 0 0
+    padding: 210px 0 314px 0
     background: url('../img/ellipse_bg.png') no-repeat 
     //background-size: cover
+    background-size: 3060px 2100px
     background-position: top 0 left calc(50% - 300px)
     //position: relative
     z-index: 0
@@ -15,6 +16,7 @@
         //padding: 30px 0
         text-transform: uppercase
         position: relative
+        margin-bottom: 110px
         .qstn-mark
             z-index: -1
             position: absolute
@@ -23,3 +25,107 @@
             top: 50%
             transform: translateY(-50%)
             right: -55px
+    .situation
+        display: flex
+        align-items: center
+        .txt
+            display: inline-block
+            text-align: left
+            font-family: $GilroyLight
+            font-size: 18px
+            line-height: 1.4
+            color: $pseudoBlackTxt
+            position: relative
+            .caption
+                z-index: 1
+                position: absolute
+                font-family: $GilroyExtraBold
+                font-size: 48px
+                bottom: 100%
+                .text
+                    font-family: $GilroyExtraBold
+                    font-size: 48px
+                    color: black
+                .dot
+                    font-family: $GilroyExtraBold
+                    font-size: 48px
+                    color: $pseudoRedTxt2
+        .img-box
+            display: inline-block
+            line-height: 0
+            //border: 1px solid #000
+            position: relative
+            .img
+                //z-index: 0
+                position: absolute
+                //display: inline-block
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+        &--1
+            margin-bottom: 330px
+            justify-content: flex-end
+            .txt
+                margin-right: 30px
+                max-width: 265px
+                .caption
+                    left: 100%
+            .img-box
+                width: 457px
+                .img
+                    height: 364px
+                    width: 457px
+                    background: url('../img/img1.jpg') no-repeat center
+                    transform: translate(-50%, calc(-50% + 30px))
+        &--2
+            margin-bottom: 330px
+            justify-content: flex-start
+            .txt
+                max-width: 310px
+                .caption
+                    right: 100%
+                    bottom: calc(100% + 20px)
+            .img-box
+                width: 432px
+                margin-right: 41px
+                .img
+                    width: 432px
+                    height: 345px
+                    background: url('../img/img2.jpg') no-repeat center 
+                    transform: translate(-50%, calc(-50% + 40px))
+        &--3
+            margin-bottom: 375px
+            justify-content: flex-end
+            .txt
+                max-width: 375px
+                margin-right: 30px
+                .caption
+                    left: 100%
+            .img-box
+                width: 345px
+                .img
+                    width: 345px
+                    height: 508px
+                    background: url('../img/img3.jpg') no-repeat center 
+                    transform: translate(-50%, calc(-50% + 20px)) 
+        &--4
+            //margin-bottom: 375px
+            justify-content: flex-start
+            .txt
+                max-width: 290px
+                //margin-right: 30px
+                .caption
+                    right: calc(100% - 160px)
+                    min-width: 230px
+                    .text
+                        //text-transform: uppercase
+                    .dot
+                        display: none
+            .img-box
+                width: 555px
+                margin-right: 41px
+                .img
+                    width: 557px
+                    height: 294px
+                    background: url('../img/img4.jpg') no-repeat center 
+                    transform: translate(-50%, calc(-50% - 20px)) 
