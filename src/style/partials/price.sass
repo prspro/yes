@@ -1,0 +1,109 @@
+.price
+	.container
+		.contnt
+			display: flex
+			justify-content: flex-end
+			.img-part
+				//margin-right: 30px
+				position: relative
+				&::before
+					content: ""
+					position: absolute
+					height: 1078px
+					width: 749px
+					background: url('../img/bigben.png') no-repeat center
+					top: 0
+					right: 0
+					transform: translate(-50px, -145px)
+				&::after
+					content: ""
+					position: absolute
+					height: 19px	
+					width: 145px
+					background: url('../img/svg/wave.svg') no-rpeat center
+					top: 50%
+					right: 0
+					transform: translate(-55px, 180px)		
+				.circle-gray
+					z-index: -2
+					position: absolute
+					height: 635px
+					width: 635px
+					border: 110px solid $pseudoGrayBg
+					border-radius: 50%
+					top: 0
+					right: 0
+					transform: translate(-30px, 105px)
+				.circle-blue
+					z-index: -1
+					position: absolute
+					height: 172px
+					width: 172px
+					border: 30px solid $pseudoBlueBg
+					border-radius: 50%
+					top: 0
+					right: 0
+					transform: translate(-440px, 30px)					
+			.text-part
+				max-width: 750px
+				//margin-left: auto
+				//position: relative
+				.title
+					display: inline-block
+					position: relative
+					font-family: $GilroyExtraBold
+					font-size: 45px
+					text-transform: uppercase
+					margin-bottom: 95px
+					&::before
+						content: ""
+						position: absolute
+						height: 7px
+						width: 64px
+						left: 0
+						bottom: -38px
+						background-color: $pseudoRedBg
+					&::after
+						z-index: -1
+						content: "?"
+						position: absolute
+						font-family: $GilroyExtraBold
+						font-size: 300px
+						color: $pseudoGrayTxt
+						top: 50%
+						left: 100%
+						transform: translate(-50%, -50%)
+				.price-value
+					display: block
+					font-family: $GilroyLight
+					font-size: 45px
+					color: $pseudoRedTxt2
+					margin-bottom: 20px
+				.text
+					display: block
+					font-family: $GilroyLight
+					font-size: 18px
+					line-height: 1.4
+					color: $pseudoBlackTxt
+					margin-bottom: 45px
+					max-width: 653px
+				.weeks
+					display: flex
+					justify-content: space-between
+					&__col
+						margin-right: 30px
+						&:last-of-type
+							margin-right: 0
+						.week
+							font-size: 18px
+							margin-bottom: 35px
+							.lil-title
+								font-family: $GilroyExtraBold
+								margin-bottom: 10px
+							.description
+								font-family: $GilroyLight
+								line-height: 1.4
+							&:last-pf-type
+								margin-bottom: 0
+
+
