@@ -1,0 +1,130 @@
+.about
+	padding:  235px 0 0 0 
+	background: url('../img/ellipse_bg2.png') no-repeat center
+	background-position: 50% 200px
+	position: relative
+	z-index: 0
+	.title
+		position: relative
+		text-transform: uppercase
+		font-family: $GilroyExtraBold
+		font-size: 45px
+		line-height: 1.2
+		margin-bottom: 157px
+		max-width: 350px
+		padding-bottom: 43px
+		&::after
+			content: ""
+			position: absolute
+			height: 7px
+			width: 64px
+			background-color: $pseudoRedBg
+			//right: 0
+			bottom: 0
+			left: 3px
+	.step
+		position: relative
+		.text
+			//display: inline-block
+			//padding-left: 36px
+			font-size: 18px
+			.lil-title
+				position: relative
+				font-family: $GilroyExtraBold
+				margin-bottom: 15px
+				padding-left: 36px
+				.arrow
+					position: absolute
+					height: 3px
+					width: 13px
+					background-color: $pseudoRedBg
+					left: 0
+					top: 50%
+					transform: translate(0, -50%)
+					&::after
+						content: ""
+						position: absolute
+						height: 2.5px
+						width: 7px
+						background-color: $pseudoRedBg
+						right: 0
+						//top: 0%
+						transform: translate(4px, 1px) rotate(-30deg)
+					&::before
+						content: ""
+						position: absolute
+						height: 2.5px
+						width: 7px
+						background-color: $pseudoRedBg
+						right: 0
+						//bottom: 0%
+						transform: translate(4px, -1px) rotate(30deg)
+			.description
+				font-family: $GilroyLight
+				line-height: 1.4
+				padding-left: 36px
+				color: $pseudoBlackTxt
+		.image-box
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translate(0, -50%)
+			.image
+				//z-index: -1
+				position: relative
+				display: inline-block
+				width: 555px
+				height: 333px
+				border: 1px solid #000
+				background: url('../img/2.jpg') no-repeat center	
+				background-size: cover	
+				&::after
+					z-index: -1
+					position: absolute
+					font-family: $GilroyExtraBold
+					font-size: 122px
+					color: $pseudoGrayBg2
+					letter-spacing: 6px
+					content: "просто"
+					top: 35px
+					left: -380px
+				.waves
+					position: absolute
+					height: 10px
+					width: 66px
+					background: url('../img/svg/wave.svg') no-repeat center
+					top: 45px
+					right: 0
+					transform: translateX(36px)
+					&::after
+						content: ""
+						position: absolute
+						height: 10px
+						width: 66px
+						background: url('../img/svg/wave.svg') no-repeat center
+						bottom: 100%
+						left: 0
+					&::before
+						content: ""
+						position: absolute
+						height: 10px
+						width: 66px
+						background: url('../img/svg/wave.svg') no-repeat center
+						top: 100%
+						left: 0
+		&--1
+			margin-bottom: 315px
+			&::after
+				content: ""
+			.text
+				max-width: 488px
+			.image-box
+				right: 0
+				top: 50%
+				background-color: pink
+				.image
+					&::after
+						content: "просто"
+						top: 35px
+						left: -380px
+		
