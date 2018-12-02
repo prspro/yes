@@ -1,5 +1,5 @@
 .about
-	padding:  235px 0 0 0 
+	padding:  235px 0 375px 0 
 	background: url('../img/ellipse_bg2.png') no-repeat center
 	background-position: 50% 200px
 	position: relative
@@ -28,6 +28,7 @@
 			//display: inline-block
 			//padding-left: 36px
 			font-size: 18px
+			max-width: 488px
 			.lil-title
 				position: relative
 				font-family: $GilroyExtraBold
@@ -65,19 +66,19 @@
 				padding-left: 36px
 				color: $pseudoBlackTxt
 		.image-box
+			z-index: -1
 			position: absolute
 			right: 0
 			top: 50%
 			transform: translate(0, -50%)
+			//line-height: 0
 			.image
 				//z-index: -1
 				position: relative
-				display: inline-block
-				width: 555px
-				height: 333px
-				border: 1px solid #000
-				background: url('../img/2.jpg') no-repeat center	
-				background-size: cover	
+				//display: inline-block
+				display: block
+				//line-height: 0
+				//border: 1px solid #000
 				&::after
 					z-index: -1
 					position: absolute
@@ -85,9 +86,6 @@
 					font-size: 122px
 					color: $pseudoGrayBg2
 					letter-spacing: 6px
-					content: "просто"
-					top: 35px
-					left: -380px
 				.waves
 					position: absolute
 					height: 10px
@@ -114,17 +112,98 @@
 						left: 0
 		&--1
 			margin-bottom: 315px
-			&::after
-				content: ""
 			.text
-				max-width: 488px
+				//max-width: 488px
 			.image-box
 				right: 0
 				top: 50%
-				background-color: pink
+				//background-color: pink
 				.image
+					background: url('../img/about1.jpg') no-repeat center	
+					background-size: cover
+					width: 555px
+					height: 333px
 					&::after
 						content: "просто"
+						top: 30px
+						left: -410px
+					&::before
+		&--2
+			margin-bottom: 290px
+			padding-right: 67px
+			.text
+				margin-right: 0
+				margin-left: auto
+			.image-box
+				left: 0
+				top: 50%
+				//background-color: pink
+				transform: translate(0, calc(-50% - 20px))
+				.image
+					background: url('../img/about2.jpg') no-repeat center	
+					background-size: cover
+					width: 555px
+					height: 333px
+					&::after
+						content: "общение"
+						top: 45px
+						right: -518px
+					&::before
+						content: ""
+						position: absolute
+						left: 50px
+						top: -50px
+						height: 23px
+						width: 23px
+						border-radius: 50%
+						background-color: $pseudoBlueBg
+		&--3
+			margin-bottom: 330px
+			.text
+				//max-width: 488px
+			.image-box
+				right: 0
+				top: 50%
+				//background-color: pink
+				.image
+					background: url('../img/about3.jpg') no-repeat center	
+					background-size: cover
+					width: 555px
+					height: 333px
+					&::after
+						content: "практика"
+						top: 30px
+						right: 100%
+						transform: translateX(12px)
+					&::before		
+		&--4
+			//margin-bottom: 315px
+			padding-right: 67px
+			.text
+				margin-right: 0
+				margin-left: auto
+			.image-box
+				left: 0
+				top: 50%
+				//background-color: pink
+				.image
+					background: url('../img/about4.jpg') no-repeat center	
+					background-size: cover
+					width: 555px
+					height: 333px
+					&::after
+						content: "повтор"
 						top: 35px
-						left: -380px
-		
+						left: 100%
+						transform: translateX(-5px)
+					&::before
+						content: ""
+						position: absolute
+						top: 0
+						right: 0
+						//background-color: $pseudoBlueBg
+						height: 55px
+						width: 55px
+						border: 15px solid $pseudoBlueBg
+						border-radius: 50%
+						transform: translate(50%, -50%)
