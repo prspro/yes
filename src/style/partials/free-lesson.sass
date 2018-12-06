@@ -1,0 +1,107 @@
+.free-lesson
+    padding: 265px 0 182px 0
+    //position: relative
+    .container
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            width: 145px
+            height: 19px
+            top: -265px
+            right: 15px
+            background: url('../img/svg/wave.svg') no-repeat center
+        &::after
+            content: ""
+            position: absolute
+            height: 23px
+            width: 23px
+            background-color: $pseudoBlueBg
+            border-radius: 50%
+            left: 324px
+            bottom: -43px
+        .circles
+            position: absolute
+            height: 23px
+            width: 23px
+            background-color: $pseudoBlueBg 
+            border-radius: 50%
+            right: 38px
+            top: -50px 
+            &::before
+                content: ""
+                position: absolute
+                height: 10px
+                width: 10px
+                background-color: $pseudoBlueBg
+                border-radius: 50%
+                top: 2px
+                right: -112px
+            &:after
+                content: ""
+                position: absolute
+                height: 10px
+                width: 10px
+                background-color: $pseudoBlueBg
+                border-radius: 50%
+                top: -40px
+                right: -37px
+        .image
+            position: absolute
+            display: inline-block
+            width: 814px
+            height: 533px
+            background: url('../img/plane.png') no-repeat center
+            top: 0
+            left: 0
+            transform: translate(-210px, -180px)
+            &::after
+                content: ""
+                position: absolute
+                width: 145px
+                height: 19px
+                background: url('../img/svg/wave.svg') no-repeat center
+                top: 50px
+                right: 85px
+        .col
+            max-width: 453px
+            //padding-right: 67px
+            margin-right: 67px
+            margin-left: auto
+            .title
+                font-family: $GilroyExtraBold
+                font-size: 45px
+                padding-bottom: 40px
+                margin-bottom: 25px
+                line-height: 1.2
+                letter-spacing: 2px
+                text-transform: uppercase
+                position: relative
+                &::after
+                    content: ""
+                    position: absolute
+                    width: 64px
+                    height: 7px
+                    background-color: $pseudoRedBg
+                    bottom: 0
+                    left: 0
+            .text
+                font-family: $GilroyLight
+                font-size: 18px
+                line-height: 1.4
+                color: $pseudoBlackTxt
+                margin-bottom: 100px
+            .order-btn
+                display: inline-block
+                text-decoration: none
+                color: #fff
+                font-size: 18px
+                line-height: 70px
+                padding: 0 64px 0 35px
+                border-radius: 35px
+                background-color: $pseudoRedBg
+                box-shadow: 0px 10px 28px rgba(245, 17, 44, 0.55)
+                &:hover
+                    background-color: #f63f54
+                &:active
+                    background-color: #d50d25
