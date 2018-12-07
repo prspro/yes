@@ -1,0 +1,57 @@
+.footer
+    padding: 45px 0 38px 0
+    background-color: #f8f8f8
+    .logo
+        //position: relative
+        //z-index: 5
+        display: inline-block
+        font-family: $MuseoSansCyrl
+        font-size: 30px
+        text-decoration: none
+        margin-bottom: 15px
+        &__dot
+            color: black
+        &__txt	
+            color: $pseudoRedTxt
+    .cols
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .col
+            .address
+                font-family: $GilroyLight
+                font-size: 16px
+                line-height: 1.6
+                color: $pseudoBlackTxt
+                max-width: 205px
+            .social
+                margin-bottom: 23px
+                .link
+                    margin-right: 20px
+                    &:last-of-type
+                        margin-right: 0
+                    .fico
+                        font-size: 35px
+                        color: #cbcbcb
+            .number
+                display: block
+                font-family: $GilroyLight
+                font-size: 16px
+                color: $pseudoBlackTxt
+                margin-bottom: 18px
+            .order
+                display: inline-block
+                font-family: $GilroyLight
+                font-size: 16px
+                color: $pseudoRedTxt2
+                position: relative
+                padding-bottom: 6px
+                text-decoration: none
+                &::after
+                    content: ""
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    height: 2px
+                    background-color: #fa8895
