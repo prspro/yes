@@ -6,7 +6,7 @@
         //z-index: 5
         display: inline-block
         font-family: $MuseoSansCyrl
-        font-size: 30px
+        font-size: 48px
         text-decoration: none
         margin-bottom: 15px
         &__dot
@@ -16,16 +16,24 @@
     .cols
         display: flex
         justify-content: space-between
-        align-items: center
+        align-items: flex-end
         .col
-            .address
+            //display: inline-block
+            .text
+                display: flex
+                justify-content: space-between
                 font-family: $GilroyLight
-                font-size: 16px
-                line-height: 1.6
+                font-size: 18px
+                //line-height: 1.6
                 color: $pseudoBlackTxt
-                max-width: 205px
+                //max-width: 205px
+                .name
+                    display: inline-block
+                .address
+                    display: inline-block
             .social
-                margin-bottom: 23px
+                margin-bottom: 25px
+                text-align: right
                 .link
                     margin-right: 20px
                     &:last-of-type
@@ -34,24 +42,30 @@
                         font-size: 35px
                         color: #cbcbcb
             .number
-                display: block
+                display: inline-block
                 font-family: $GilroyLight
-                font-size: 16px
+                font-size: 18px
                 color: $pseudoBlackTxt
-                margin-bottom: 18px
+                //margin-bottom: 18px
+                margin-right: 25px
             .order
                 display: inline-block
                 font-family: $GilroyLight
-                font-size: 16px
+                font-size: 18px
                 color: $pseudoRedTxt2
                 position: relative
-                padding-bottom: 6px
+                //padding-bottom: 6px
                 text-decoration: none
                 &::after
                     content: ""
                     position: absolute
-                    bottom: 0
+                    //bottom: 0
+                    bottom: -6px
                     left: 0
                     right: 0
                     height: 2px
                     background-color: #fa8895
+            &--wide
+                flex-grow: 1
+                margin-right: 30px
+
