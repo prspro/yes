@@ -14,6 +14,8 @@
 			color: black
 		&__txt	
 			color: $pseudoRedTxt
+		+r(991)
+			font-size: 30px
 	.huge-bg-text
 		z-index: -1
 		position: absolute
@@ -30,11 +32,16 @@
 		.bigger
 			font-size: 372px
 			margin-right: 110px
+			+r(991)
+				font-size: 275px
 		.smaller
 			font-size: 322px
+			+r(991)
+				font-size: 238px
 	.container
 		position: relative
 		&::before
+			z-index: 2
 			content: ""
 			position: absolute
 			height: 55px
@@ -68,6 +75,8 @@
 				//font-family: 'Times New Roman', Times, serif
 				font-size: 18px
 				letter-spacing: 1px
+				+r(1199)
+					font-size: 16px
 				&:last-of-type
 					margin-right: 0
 				&--address
@@ -97,6 +106,14 @@
 			bottom: -90px
 			left: 0
 			background: url('../img/bus.png') no-repeat center
+			+r(1199)
+				left: -200px
+			+r(991)
+				height: 488px
+				width: 365px
+				background-size: contain
+				bottom: 20px
+				left: -55px			
 		.col
 			max-width: 520px
 			margin-left: auto

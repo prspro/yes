@@ -30,6 +30,9 @@
 		.description-bar
 			display: flex
 			position: relative
+			+r(1199)
+				flex-wrap: wrap
+				justify-content: space-between
 			&::after
 				content: ""
 				z-index: -1
@@ -52,8 +55,13 @@
 					background: url('../img/svg/wave.svg') no-repeat center
 			.description
 				margin-right: 30px
+				+r(1199)
+					margin-right: 0
+					margin-bottom: 45px
 				&:last-of-type
 					margin-right: 0
+					+r(1199)
+						margin-bottom: 0
 				.photo
 					display: block
 					line-height: 0
@@ -68,12 +76,20 @@
 						background: url('../img/2.jpg') no-repeat center
 					&--3
 						background: url('../img/3.jpg') no-repeat center
+					+r(1199)
+						margin-left: 0
+						margin-right: 0
+						display: inline-block
 				.lil-title
 					font-family: $GilroyExtraBold
 					font-size: 18px
 					margin-bottom: 15px
+					+r(1199)
+						//display: inline-block
 				.text
 					font-family: $GilroyLight
 					font-size: 14px
 					line-height: 1.7
 					color: $pseudoBlackTxt
+					+r(1199)
+						max-width: 360px
