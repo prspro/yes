@@ -1,5 +1,7 @@
 .reviews
 	padding: 80px 0 150px 0 
+	+r(991)
+		padding: 135px 0 105px 0
 	.container
 		position: relative
 		&::after
@@ -13,6 +15,25 @@
 			top: 0
 			right: 0
 			transform: translate(130px, -470px)
+			+r(991)
+				top: 40px
+				height: 280px
+				width: 280px
+				border: 80px solid $pseudoGrayBg
+				transform: translate(155px, -100%)
+		&::before
+			display: none
+			+r(991)
+				display: block
+				content: ""
+				position: absolute
+				height: 23px
+				width: 23px
+				background-color: $pseudoBlueBg
+				border-radius: 50%
+				top: 0
+				right: 0			
+				transform: translate(-160px, 10px)	
 		.waves
 			//display: inline-block
 			position: absolute
@@ -22,6 +43,8 @@
 			background: url('../img/svg/wave.svg') no-repeat center
 			top: 70px
 			left: 100%
+			+r(991)
+				display: none
 			&::before
 				content: ""
 				position: absolute
@@ -45,6 +68,10 @@
 			text-transform: uppercase
 			padding-bottom: 43px
 			margin-bottom: 60px
+			+r(991)
+				font-size: 30px
+				padding-bottom: 32px
+				margin-bottom: 60px
 			&::after
 				content: ""
 				position: absolute
@@ -62,6 +89,8 @@
 				margin: 0 15px
 				//border: 1px solid #000
 				position: relative
+				+r(991)
+					padding-top: 0
 				&::after
 					content: ""
 					position: absolute
@@ -71,11 +100,15 @@
 					border-radius: 50%
 					top: 0
 					right: 172px
+					+r(991)
+						display: none
 				.avatar-part
 					margin-right: 30px
 					.photo	
 				.text-part
 					padding: 0 150px 0 35px
+					+r(991)
+						padding: 0
 					.name
 						display: block
 						font-family: $GilroyExtraBold
@@ -84,12 +117,16 @@
 						margin-bottom: 35px
 						letter-spacing: 1px
 						text-decoration: none
+						+r(991)
+							font-size: 16px
 					.review-text
 						font-family: $GilroyLight
 						font-size: 18px
 						color: $pseudoBlackTxt
 						line-height: 1.4
 						margin-bottom: 30px
+						+r(991)
+							font-size: 16px
 					.link
 						display: inline-block
 						text-decoration: none

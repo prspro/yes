@@ -1,5 +1,7 @@
 .prediction
     padding: 155px 0 150px 0
+    +r(991)
+        padding: 125px 0 80px 0
     .container
         position: relative
         &::before
@@ -10,6 +12,10 @@
             bottom: -150px
             right: 217px
             background: url('../img/svg/wave.svg') no-repeat center
+            +r(991)
+                bottom: -80px
+                right: 0
+                transform: translateX(35px)
         &::after
             content: ""
             position: absolute
@@ -21,6 +27,12 @@
             transform: translate(-530px, -420px)
             +r(1199)
                 transform: translate(-320px, -420px)
+            +r(991)
+                height: 365px
+                width: 611px
+                background-size: contain
+                top: 0
+                transform: translate(-200px, -140px)
         .title
             font-family: $GilroyExtraBold
             font-size: 45px
@@ -29,6 +41,10 @@
             max-width: 500px
             position: relative
             margin-bottom: 110px
+            +r(991)
+                font-size: 30px
+                max-width: 330px
+                margin-bottom: 100px
             &::after
                 content: ""
                 position: absolute
@@ -37,12 +53,17 @@
                 background-color: $pseudoRedBg
                 left: 4px
                 bottom: -40px
+                +r(991)
+                    bottom: -35px
         .col
             display: inline-block
             padding: 0 15px
             font-size: 18px
             letter-spacing: 0.5px
             margin-right: 30px
+            +r(991)
+                font-size: 16px
+                padding: 0
             &:last-of-type
                 margin-right: 0
             &__title
@@ -59,9 +80,11 @@
                     border-radius: 50%
                     top: 0
                     left: 0
-                    transform: translate(-50%, -50%)
+                    transform: translate(0, -50%)
             &__text
                 display: inline-block
                 font-family: $GilroyLight
                 line-height: 1.4
                 max-width: 240px
+                +r(991)
+                    max-width: 220px

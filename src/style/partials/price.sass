@@ -1,5 +1,5 @@
 .price
-	//margin-bottom: 230px
+	padding-bottom: 210px
 	.container
 		.contnt
 			display: flex
@@ -7,15 +7,23 @@
 			.img-part
 				//margin-right: 30px
 				position: relative
-				&::before
-					content: ""
-					position: absolute
+				.img
 					height: 1078px
 					width: 749px
 					background: url('../img/bigben.png') no-repeat center
 					top: 0
 					right: 0
 					transform: translate(-50px, -145px)
+					//content: ""
+					position: absolute
+					//display: inline-block
+					+r(991)
+						height: 881px
+						width: 612px
+						background-size: cover
+						top: initial
+						bottom: 0
+						transform: translate(-50px, 70px)
 				&::after
 					content: ""
 					position: absolute
@@ -49,6 +57,8 @@
 				max-width: 750px
 				//margin-left: auto
 				//position: relative
+				+r(991)
+					max-width: 595px
 				.title
 					display: inline-block
 					position: relative
@@ -56,6 +66,9 @@
 					font-size: 45px
 					text-transform: uppercase
 					margin-bottom: 95px
+					+r(991)
+						font-size: 30px
+						margin-bottom: 70px
 					&::before
 						content: ""
 						position: absolute
@@ -74,12 +87,16 @@
 						top: 50%
 						left: 100%
 						transform: translate(-50%, -50%)
+						+r(991)
+							font-size: 200px
 				.price-value
 					display: block
 					font-family: $GilroyLight
 					font-size: 45px
 					color: $pseudoRedTxt2
 					margin-bottom: 20px
+					+r(991)
+						font-size: 30px
 				.text
 					display: block
 					font-family: $GilroyLight
@@ -88,6 +105,9 @@
 					color: $pseudoBlackTxt
 					margin-bottom: 45px
 					max-width: 653px
+					+r(991)
+						font-size: 16px
+						max-width: 57	5px
 				.weeks
 					display: flex
 					justify-content: space-between
@@ -98,6 +118,8 @@
 						.week
 							font-size: 18px
 							margin-bottom: 35px
+							+r(991)
+								font-size: 16px
 							&:last-of-type
 								margin-bottom: 0
 							.lil-title

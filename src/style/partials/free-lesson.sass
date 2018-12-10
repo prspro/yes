@@ -1,5 +1,7 @@
 .free-lesson
     padding: 265px 0 182px 0
+    +r(991)
+        padding: 170px 0 138px 0
     //position: relative
     .container
         position: relative
@@ -11,6 +13,8 @@
             top: -265px
             right: 15px
             background: url('../img/svg/wave.svg') no-repeat center
+            +r(991)
+                top: -170px
         &::after
             content: ""
             position: absolute
@@ -28,6 +32,9 @@
             border-radius: 50%
             right: 38px
             top: -50px 
+            +r(991)
+                right: 0
+                transform: translate(30px)
             &::before
                 content: ""
                 position: absolute
@@ -57,6 +64,11 @@
             transform: translate(-210px, -180px)
             +r(1199)
                 transform: translate(-430px, -180px)
+            +r(991)
+                width: 760px
+                height: 498px
+                background-size: cover
+                transform: translate(-430px, -110px)
             &::after
                 content: ""
                 position: absolute
@@ -65,11 +77,18 @@
                 background: url('../img/svg/wave.svg') no-repeat center
                 top: 50px
                 right: 85px
+                +r(991)
+                    top: 30px
+                    right: 0
+                    transform: translatex(50%)
         .col
             max-width: 453px
             //padding-right: 67px
             margin-right: 67px
             margin-left: auto
+            +r(991)
+                max-width: 345px
+                margin-right: 0
             .title
                 font-family: $GilroyExtraBold
                 font-size: 45px
@@ -79,6 +98,9 @@
                 letter-spacing: 2px
                 text-transform: uppercase
                 position: relative
+                +r(991)
+                    font-size: 30px
+                    padding-bottom: 30px
                 &::after
                     content: ""
                     position: absolute
@@ -93,6 +115,8 @@
                 line-height: 1.4
                 color: $pseudoBlackTxt
                 margin-bottom: 100px
+                +r(991)
+                    margin-bottom: 40px
             .order-btn
                 display: inline-block
                 text-decoration: none
@@ -103,6 +127,10 @@
                 border-radius: 35px
                 background-color: $pseudoRedBg
                 box-shadow: 0px 10px 28px rgba(245, 17, 44, 0.55)
+                +r(991)
+                    font-size: 14px
+                    padding: 0 30px
+                    line-height: 62px
                 &:hover
                     background-color: #f63f54
                 &:active

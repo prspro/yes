@@ -1,5 +1,7 @@
 .teachers
 	padding: 100px 0 225px 0 
+	+r(991)
+		padding: 90px 0 
 	.container
 		position: relative
 		&::before
@@ -27,6 +29,9 @@
 			font-size: 45px
 			text-transform: uppercase
 			margin-bottom: 50px
+			+r(991)
+				font-size: 30px
+				margin-bottom: 55px
 		.description-bar
 			display: flex
 			position: relative
@@ -44,6 +49,10 @@
 				right: 0
 				top: 0
 				transform: translate(236px, -147px)
+				+r(991)
+					top: initial
+					bottom: 0
+					transform: translate(415px, -100px)
 			.waves
 				position: absolute
 				top: 157px
@@ -53,15 +62,17 @@
 					height: 10px
 					margin-bottom: 2px
 					background: url('../img/svg/wave.svg') no-repeat center
+				+r(991)
+					top: initial
+					bottom: 280px
+					right: 0
 			.description
 				margin-right: 30px
 				+r(1199)
 					margin-right: 0
 					margin-bottom: 45px
 				&:last-of-type
-					margin-right: 0
-					+r(1199)
-						margin-bottom: 0
+					margin-bottom: 0
 				.photo
 					display: block
 					line-height: 0
@@ -70,6 +81,10 @@
 					margin-right: auto
 					width: 360px
 					height: 286px
+					+r(991)
+						height: 274px
+						width: 345px
+						background-size: cover
 					&--1
 						background: url('../img/1.jpg') no-repeat center
 					&--2
@@ -84,8 +99,6 @@
 					font-family: $GilroyExtraBold
 					font-size: 18px
 					margin-bottom: 15px
-					+r(1199)
-						//display: inline-block
 				.text
 					font-family: $GilroyLight
 					font-size: 14px
@@ -93,3 +106,11 @@
 					color: $pseudoBlackTxt
 					+r(1199)
 						max-width: 360px
+					+r(991)
+						font-size: 14px
+						max-width: 345px
+				//&:last-of-type
+				&--last
+					background-color: red
+					+r(991)
+						margin-bottom: 0

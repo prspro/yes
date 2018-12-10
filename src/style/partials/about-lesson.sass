@@ -1,9 +1,12 @@
 .about
-	padding:  235px 0 375px 0 
+	padding:  40px 0 375px 0 
 	background: url('../img/ellipse_bg2.png') no-repeat center
-	background-position: 50% 200px
+	//background-position: 50% 200px
+	background-size: cover
 	position: relative
 	z-index: 0
+	+r(991)
+		padding-bottom: 190px
 	.title
 		position: relative
 		text-transform: uppercase
@@ -13,6 +16,10 @@
 		margin-bottom: 157px
 		max-width: 350px
 		padding-bottom: 43px
+		+r(991)
+			font-size: 30px
+			padding-bottom: 25px
+			margin-bottom: 155px
 		&::after
 			content: ""
 			position: absolute
@@ -29,6 +36,9 @@
 			//padding-left: 36px
 			font-size: 18px
 			max-width: 488px
+			+r(991)
+				font-size: 16px
+				max-width: 300px
 			.lil-title
 				position: relative
 				font-family: $GilroyExtraBold
@@ -112,6 +122,8 @@
 						left: 0
 		&--1
 			margin-bottom: 315px
+			+r(991)
+				margin-bottom: 170px
 			.text
 				//max-width: 488px
 			.image-box
@@ -130,10 +142,21 @@
 						content: "просто"
 						top: 30px
 						left: -410px
+						+r(1199)
+							top: -30px
+						+r(991)
+							font-size: 72px
+							right: 100%
+							left: initial
+							top: 0
+							transform: translate(20px, -10px)
 					&::before
 		&--2
 			margin-bottom: 290px
 			padding-right: 67px
+			+r(991)
+				padding-right: 32px
+				margin-bottom: 140px
 			.text
 				margin-right: 0
 				margin-left: auto
@@ -154,6 +177,14 @@
 						content: "общение"
 						top: 45px
 						right: -518px
+						+r(1199)
+							top: -30px
+						+r(991)
+							font-size: 72px
+							right: initial
+							left: 100%
+							top: 0
+							transform: translateX(-20px)
 					&::before
 						content: ""
 						position: absolute
@@ -165,6 +196,8 @@
 						background-color: $pseudoBlueBg
 		&--3
 			margin-bottom: 330px
+			+r(991)
+				margin-bottom: 150px
 			.text
 				//max-width: 488px
 			.image-box
@@ -184,10 +217,18 @@
 						top: 30px
 						right: 100%
 						transform: translateX(12px)
+						+r(1199)
+							top: -30px
+						+r(991)
+							font-size: 72px
+							top: 0
+							transform: translateX(-5px)
 					&::before		
 		&--4
 			//margin-bottom: 315px
 			padding-right: 67px
+			+r(991)
+				padding-right: 32px
 			.text
 				margin-right: 0
 				margin-left: auto
@@ -208,6 +249,12 @@
 						top: 35px
 						left: 100%
 						transform: translateX(-5px)
+						+r(1199)
+							top: -30px
+						+r(991)
+							font-size: 72px
+							top: -10px
+							transform: translateX(30px)
 					&::before
 						content: ""
 						position: absolute
