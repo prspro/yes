@@ -19,6 +19,10 @@
         display: flex
         justify-content: space-between
         align-items: flex-end
+        +r(767)
+            flex-direction: column
+            align-items: center
+            text-align: center
         .col
             //display: inline-block
             .text
@@ -32,6 +36,8 @@
                 +r(991)
                     flex-direction: column
                     font-size: 16px
+                +r(767)
+                    font-size: 14px
                 .name
                     display: inline-block
                     +r(991)
@@ -63,6 +69,9 @@
                     margin-bottom: 10px
                     margin-right: 0
                     text-align: right
+                +r(767)
+                    text-align: center
+                    font-size: 14px
             .order
                 display: inline-block
                 font-family: $GilroyLight
@@ -75,6 +84,9 @@
                     font-size: 16px
                     text-align: right
                     float: right
+                +r(767)
+                    font-size: 14px
+                    float: none
                 &::after
                     content: ""
                     position: absolute
@@ -87,4 +99,7 @@
             &--wide
                 flex-grow: 1
                 margin-right: 30px
+                +r(767)
+                    margin-right: 0
+                    margin-bottom: 30px
 

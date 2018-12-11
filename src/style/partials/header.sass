@@ -34,6 +34,8 @@
 		letter-spacing: 4px
 		+r(991)
 			top: 150px
+		+r(767)
+			display: none
 		.bigger
 			font-size: 372px
 			margin-right: 110px
@@ -58,6 +60,10 @@
 			//transform: translateY(-50%)
 			top: 365px
 			left: -85px
+			+r(767)
+				top: 0
+				left: 0
+				transform: translate(15px, 283px)
 		&::after
 			content: ""
 			position: absolute
@@ -69,6 +75,10 @@
 			top: 195px
 			+r(991)
 				top: 119px
+			+r(767)
+				right: 0
+				top: 0
+				transform: translate(-38px, 107px)
 		.header-bar
 			display: flex
 			justify-content: space-between
@@ -77,6 +87,9 @@
 			margin-bottom: 195px
 			+r(991)
 				margin-bottom: 80px
+			+r(767)
+				height: 80px
+				margin-bottom: 20px
 			.contact
 				display: inline-block
 				margin-right: 30px
@@ -87,10 +100,20 @@
 				letter-spacing: 1px
 				+r(1199)
 					font-size: 16px
+				+r(767)
+					display: block
+					text-align: right
+					margin-right: 0
+					font-size: 14px
 				&:last-of-type
 					margin-right: 0
 				&--address
+					+r(767)
+						display: none
 				&--number
+					+r(767)
+						display: block
+						margin-bottom: 5px
 				&--link
 					display: inline-block
 					color: $pseudoRedTxt2
@@ -123,7 +146,10 @@
 				width: 365px
 				background-size: contain
 				bottom: 10px
-				left: -55px			
+				left: -55px		
+			+r(767)
+				position: static	
+				margin-bottom: 15px
 		.col
 			max-width: 520px
 			margin-left: auto
@@ -131,6 +157,10 @@
 			position: relative
 			+r(991)
 				max-width: 407px
+			+r(767)
+				max-width: 290px
+				text-align: center
+				margin-right: auto
 			&::after
 				content: ""
 				position: absolute
@@ -143,6 +173,8 @@
 				//background-size: 100px 100px
 				+r(991)
 					transform: translateX(60px)
+				+r(767)
+					display: none
 			.title
 				text-transform: uppercase
 				font-family: $GilroyExtraBold
@@ -151,6 +183,8 @@
 				margin-bottom: 5px
 				+r(991)
 					font-size: 24px
+				+r(767)
+					font-size: 18px
 			.title-bigger
 				text-transform: uppercase
 				font-family: $GilroyExtraBold
@@ -160,6 +194,9 @@
 				position: relative
 				+r(991)
 					font-size: 30px
+				+r(767)
+					font-size: 24px
+					margin-bottom: 40px
 				&::after
 					content: ""
 					position: absolute
@@ -168,6 +205,10 @@
 					left: 0
 					bottom: -35px
 					width: 64px
+					+r(767)
+						left: 50%
+						transform: translateX(-50%)
+						bottom: -24px
 			.txt
 				display: block
 				font-family: $GilroyLight
@@ -179,6 +220,9 @@
 					font-size: 16px
 					max-width: 360px
 					margin-bottom: 70px
+				+r(767)
+					font-size: 14px
+					margin-bottom: 15px
 			.order-btn
 				display: inline-block
 				text-decoration: none

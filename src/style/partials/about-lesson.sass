@@ -7,6 +7,10 @@
 	z-index: 0
 	+r(991)
 		padding-bottom: 190px
+	+r(767)
+		padding-top: 85px
+		padding-bottom: 100px
+		text-align: center
 	.title
 		position: relative
 		text-transform: uppercase
@@ -20,6 +24,10 @@
 			font-size: 30px
 			padding-bottom: 25px
 			margin-bottom: 155px
+		+r(767)
+			margin-bottom: 30px
+			margin-left: auto
+			margin-right: auto
 		&::after
 			content: ""
 			position: absolute
@@ -29,8 +37,13 @@
 			//right: 0
 			bottom: 0
 			left: 3px
+			+r(767)
+				left: 50%
+				transform: translateX(-50%)
 	.step
 		position: relative
+		+r(767)
+			margin-bottom: 40px
 		.text
 			//display: inline-block
 			//padding-left: 36px
@@ -39,11 +52,19 @@
 			+r(991)
 				font-size: 16px
 				max-width: 300px
+			+r(767)
+				font-size: 14px
+				margin-left: auto
+				margin-right: auto
 			.lil-title
 				position: relative
 				font-family: $GilroyExtraBold
 				margin-bottom: 15px
+				//display: inline
 				padding-left: 36px
+				+r(767)
+					display: inline-block
+					padding-right: 36px
 				.arrow
 					position: absolute
 					height: 3px
@@ -75,6 +96,9 @@
 				line-height: 1.4
 				padding-left: 36px
 				color: $pseudoBlackTxt
+				+r(767)
+					padding: 0
+					margin-bottom: 24px
 		.image-box
 			z-index: -1
 			position: absolute
@@ -82,6 +106,9 @@
 			top: 50%
 			transform: translate(0, -50%)
 			//line-height: 0
+			+r(767)
+				position: static
+				transform: none
 			.image
 				//z-index: -1
 				position: relative
@@ -89,6 +116,9 @@
 				display: block
 				//line-height: 0
 				//border: 1px solid #000
+				+r(767)
+					margin-left: auto
+					margin-right: auto
 				&::after
 					z-index: -1
 					position: absolute
@@ -96,6 +126,9 @@
 					font-size: 122px
 					color: $pseudoGrayBg2
 					letter-spacing: 6px
+					+r(767)
+						display: none
+
 				.waves
 					position: absolute
 					height: 10px
@@ -104,6 +137,8 @@
 					top: 45px
 					right: 0
 					transform: translateX(36px)
+					+r(767)
+						display: none
 					&::after
 						content: ""
 						position: absolute
@@ -138,6 +173,9 @@
 					+r(1199)
 						width: 345px
 						height: 208px
+					+r(767)
+						width: 290px
+						height: 175px
 					&::after
 						content: "просто"
 						top: 30px
@@ -157,6 +195,8 @@
 			+r(991)
 				padding-right: 32px
 				margin-bottom: 140px
+			+r(767)
+				padding: 0
 			.text
 				margin-right: 0
 				margin-left: auto
@@ -173,6 +213,9 @@
 					+r(1199)
 						width: 345px
 						height: 208px
+					+r(767)
+						width: 290px
+						height: 175px
 					&::after
 						content: "общение"
 						top: 45px
@@ -194,6 +237,8 @@
 						width: 23px
 						border-radius: 50%
 						background-color: $pseudoBlueBg
+						+r(767)
+							display: none
 		&--3
 			margin-bottom: 330px
 			+r(991)
@@ -212,6 +257,9 @@
 					+r(1199)
 						width: 345px
 						height: 208px
+					+r(767)
+						width: 290px
+						height: 170px
 					&::after
 						content: "практика"
 						top: 30px
@@ -229,6 +277,9 @@
 			padding-right: 67px
 			+r(991)
 				padding-right: 32px
+			+r(767)
+				padding: 0
+				margin-bottom: 0
 			.text
 				margin-right: 0
 				margin-left: auto
@@ -244,6 +295,9 @@
 					+r(1199)
 						width: 345px
 						height: 208px
+					+r(767)
+						height: 167px
+						width: 290px
 					&::after
 						content: "повтор"
 						top: 35px
@@ -266,3 +320,5 @@
 						border: 15px solid $pseudoBlueBg
 						border-radius: 50%
 						transform: translate(50%, -50%)
+						+r(767)
+							display: none

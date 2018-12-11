@@ -2,6 +2,10 @@
     padding: 265px 0 182px 0
     +r(991)
         padding: 170px 0 138px 0
+    +r(767)
+        padding-top: 100px
+        padding-bottom: 128px
+        text-align: center
     //position: relative
     .container
         position: relative
@@ -15,6 +19,12 @@
             background: url('../img/svg/wave.svg') no-repeat center
             +r(991)
                 top: -170px
+            +r(767)
+                height: 11px
+                width: 78px
+                top: 0
+                right: 50%
+                transform: translate(130px, 10px)
         &::after
             content: ""
             position: absolute
@@ -24,6 +34,11 @@
             border-radius: 50%
             left: 324px
             bottom: -43px
+            +r(767)
+                bottom: initial
+                top: 100%
+                left: 50%
+                transform: translate(-108px, 38px)
         .circles
             position: absolute
             height: 23px
@@ -35,6 +50,12 @@
             +r(991)
                 right: 0
                 transform: translate(30px)
+            +r(767)
+                width: 10px
+                height: 10px
+                top: 0
+                right: 50%
+                transform: translate(120px, 45px)
             &::before
                 content: ""
                 position: absolute
@@ -44,6 +65,8 @@
                 border-radius: 50%
                 top: 2px
                 right: -112px
+                +r(767)
+                    display: none
             &:after
                 content: ""
                 position: absolute
@@ -53,6 +76,8 @@
                 border-radius: 50%
                 top: -40px
                 right: -37px
+                +r(767)
+                    display: none
         .image
             position: absolute
             display: inline-block
@@ -69,6 +94,13 @@
                 height: 498px
                 background-size: cover
                 transform: translate(-430px, -110px)
+            +r(767)
+                width: 290px
+                height: 190px
+                position: relative
+                display: inline-block
+                transform: none
+                margin-bottom: 40px
             &::after
                 content: ""
                 position: absolute
@@ -81,6 +113,14 @@
                     top: 30px
                     right: 0
                     transform: translatex(50%)
+                +r(767)
+                    height: 11px
+                    width: 78px
+                    right: initial
+                    top: initial
+                    left: 0
+                    bottom: 0
+                    transform: translate(0)
         .col
             max-width: 453px
             //padding-right: 67px
@@ -89,6 +129,8 @@
             +r(991)
                 max-width: 345px
                 margin-right: 0
+            +r(767)
+                margin-right: auto
             .title
                 font-family: $GilroyExtraBold
                 font-size: 45px
@@ -101,6 +143,10 @@
                 +r(991)
                     font-size: 30px
                     padding-bottom: 30px
+                +r(767)
+                    font-size: 24px
+                    padding-bottom: 20px
+                    margin-bottom: 15px
                 &::after
                     content: ""
                     position: absolute
@@ -109,6 +155,9 @@
                     background-color: $pseudoRedBg
                     bottom: 0
                     left: 0
+                    +r(767)
+                        left: 50%
+                        transform: translateX(-50%)
             .text
                 font-family: $GilroyLight
                 font-size: 18px
@@ -117,6 +166,9 @@
                 margin-bottom: 100px
                 +r(991)
                     margin-bottom: 40px
+                +r(767)
+                    font-size: 14px
+                    margin-bottom: 20px
             .order-btn
                 display: inline-block
                 text-decoration: none

@@ -2,6 +2,9 @@
     padding: 155px 0 150px 0
     +r(991)
         padding: 125px 0 80px 0
+    +r(767)
+        padding: 65px 0 85px 0 
+        text-align: center
     .container
         position: relative
         &::before
@@ -16,6 +19,8 @@
                 bottom: -80px
                 right: 0
                 transform: translateX(35px)
+            +r(767)
+                display: none
         &::after
             content: ""
             position: absolute
@@ -33,6 +38,8 @@
                 background-size: contain
                 top: 0
                 transform: translate(-200px, -140px)
+            +r(767)
+                display: none
         .title
             font-family: $GilroyExtraBold
             font-size: 45px
@@ -45,6 +52,11 @@
                 font-size: 30px
                 max-width: 330px
                 margin-bottom: 100px
+                margin-left: auto
+                margin-right: auto
+            +r(767)
+                font-size: 24px
+                margin-bottom: 70px
             &::after
                 content: ""
                 position: absolute
@@ -55,6 +67,10 @@
                 bottom: -40px
                 +r(991)
                     bottom: -35px
+                +r(767)
+                    left: 50%
+                    transform: translateX(-50%)
+                    bottom: -15px
         .col
             display: inline-block
             padding: 0 15px
@@ -64,6 +80,10 @@
             +r(991)
                 font-size: 16px
                 padding: 0
+            +r(767)
+                margin-right: 0
+                margin-bottom: 50px
+                display: block
             &:last-of-type
                 margin-right: 0
             &__title
@@ -81,6 +101,9 @@
                     top: 0
                     left: 0
                     transform: translate(0, -50%)
+                    +r(767)
+                        left: 50%
+                        transform: translate(-50%, -50%)
             &__text
                 display: inline-block
                 font-family: $GilroyLight

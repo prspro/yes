@@ -1,12 +1,19 @@
 .price
 	padding-bottom: 210px
+	+r(767)
+		text-align: center
+		padding-bottom: 60px
 	.container
 		.contnt
 			display: flex
 			justify-content: flex-end
+			+r(767)
+				flex-direction: column
 			.img-part
 				//margin-right: 30px
 				position: relative
+				+r(767)
+					margin-bottom: 35px
 				.img
 					height: 1078px
 					width: 749px
@@ -24,6 +31,12 @@
 						top: initial
 						bottom: 0
 						transform: translate(-50px, 70px)
+					+r(767)
+						position: static
+						display: inline-block
+						height: 388px
+						width: 269px
+						transform: translateX(-25px)
 				&::after
 					content: ""
 					position: absolute
@@ -32,7 +45,11 @@
 					background: url('../img/svg/wave.svg') no-repeat center
 					top: 50%
 					right: 0
-					transform: translate(-55px, 180px)		
+					transform: translate(-55px, 180px)	
+					+r(767)
+						width: 90px
+						height: 13px
+						transform: translate(-20px, 30px)
 				.circle-gray
 					z-index: -2
 					position: absolute
@@ -43,6 +60,13 @@
 					top: 0
 					right: 0
 					transform: translate(-30px, 105px)
+					+r(767)
+						height: 228px
+						width: 228px
+						border: 40px solid $pseudoGrayBg
+						top: 50%
+						right: 50%
+						transform: translate(50%, -50%)
 				.circle-blue
 					z-index: -1
 					position: absolute
@@ -52,13 +76,23 @@
 					border-radius: 50%
 					top: 0
 					right: 0
-					transform: translate(-440px, 30px)					
+					transform: translate(-440px, 30px)	
+					+r(767)
+						width: 62px
+						height: 62px
+						border: 12px solid $pseudoBlueBg
+						transform: translate(-180px, 70px)
 			.text-part
 				max-width: 750px
 				//margin-left: auto
 				//position: relative
 				+r(991)
 					max-width: 595px
+				+r(767)
+					max-width: 290px
+					margin-left: auto
+					margin-right: auto
+					//width: 200px
 				.title
 					display: inline-block
 					position: relative
@@ -69,6 +103,9 @@
 					+r(991)
 						font-size: 30px
 						margin-bottom: 70px
+					+r(767)
+						font-size: 24px
+						margin-bottom: 35px
 					&::before
 						content: ""
 						position: absolute
@@ -77,6 +114,10 @@
 						left: 0
 						bottom: -38px
 						background-color: $pseudoRedBg
+						+r(767)
+							bottom: -20px
+							left: 50%
+							transform: translateX(-50%)
 					&::after
 						z-index: -1
 						content: "?"
@@ -89,6 +130,8 @@
 						transform: translate(-50%, -50%)
 						+r(991)
 							font-size: 200px
+						+r(767)
+							display: none
 				.price-value
 					display: block
 					font-family: $GilroyLight
@@ -97,6 +140,8 @@
 					margin-bottom: 20px
 					+r(991)
 						font-size: 30px
+					+r(767)
+						font-size: 24px
 				.text
 					display: block
 					font-family: $GilroyLight
@@ -107,19 +152,31 @@
 					max-width: 653px
 					+r(991)
 						font-size: 16px
-						max-width: 57	5px
+						max-width: 575px
+					+r(767)
+						font-size: 14px
+						margin-bottom: 35px
 				.weeks
 					display: flex
 					justify-content: space-between
+					+r(767)
+						flex-direction: column
 					&__col
 						margin-right: 30px
+						+r(767)
+							margin-right: 0
+							margin-bottom: 25px
 						&:last-of-type
 							margin-right: 0
+							margin-bottom: 0
 						.week
 							font-size: 18px
 							margin-bottom: 35px
 							+r(991)
 								font-size: 16px
+							+r(767)
+								margin-bottom: 25px
+								font-size: 14px
 							&:last-of-type
 								margin-bottom: 0
 							.lil-title
