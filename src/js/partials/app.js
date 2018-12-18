@@ -12,3 +12,14 @@ $(document).ready(function(){
         adaptiveHeight: true    
     });
 });
+
+$(document).on("click", function(e) {
+    const id = e.target.id;
+    const overlay = $("#js_overlay");
+        
+    if (id === "js_overlay" || id === "js_popup-close" || id === "js_btn") {
+        overlay.fadeToggle();
+        //console.log(overlay)
+    }
+    //console.log(c[0].className)
+});
