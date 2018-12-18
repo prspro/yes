@@ -17,17 +17,30 @@
         //width: 835px
         background-color: #fff
         text-align: center
+        +r(991)
+            padding: 50px 
+            padding: 30px 15px
         .title
             font-family: $GilroyExtraBold
             font-size: 34px
             text-transform: uppercase
             margin-bottom: 25px
+            +r(767)
+                font-size: 25px
+                margin-bottom: 10px
         .description
             font-family: $GilroyLight
             font-size: 18px
             line-height: 1.4
             margin-bottom: 23px
             width: 555px
+            margin-left: auto
+            margin-right: auto
+            +r(991)
+                width: 300px
+            +r(767)
+                width: 250px
+                font-size: 14px
         .number
             display: block
             width: 370px
@@ -42,9 +55,17 @@
             line-height: 68px
             padding: 0 45px
             box-sizing: border-box
+            &:focus
+                outline: none
+            +r(767)
+                width: 250px
+                line-height: 48px
+                padding: 0 20px
+                font-size: 14px
         .btn
             width: 370px
-            background-color: red
+            background-color: $pseudoRedBg
+            box-shadow: 0px 10px 28px rgba(245, 17, 44, 0.55)
             border: none
             font-size: 18px
             font-family: $GilroyExtraBold
@@ -53,3 +74,14 @@
             border-radius: 35px
             color: white
             padding: 0
+            cursor: pointer
+            &:focus
+                outline: none
+            &:hover
+                background-color: #f63f54
+            &:active
+                background-color: #d50d25
+            +r(767)
+                width: 250px
+                line-height: 50px
+                font-size: 14px
