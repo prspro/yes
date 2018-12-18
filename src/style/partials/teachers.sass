@@ -66,19 +66,6 @@
 					transform: translate(415px, -100px)
 				+r(767)
 					display: none
-			.waves
-				position: absolute
-				top: 157px
-				right: -237px
-				.wave
-					width: 66px
-					height: 10px
-					margin-bottom: 2px
-					background: url('../img/svg/wave.svg') no-repeat center
-				+r(991)
-					top: initial
-					bottom: 280px
-					right: 0
 			.description
 				margin-right: 30px
 				+r(1199)
@@ -125,8 +112,24 @@
 					+r(991)
 						font-size: 14px
 						max-width: 345px
-				//&:last-of-type
-				&--last
-					background-color: red
+				&:last-of-type
+					margin-right: 0
 					+r(991)
 						margin-bottom: 0
+		.waves
+			position: absolute
+			top: 157px
+			//right: -237px
+			right: 0
+			transform: translateX(50%)
+			.wave
+				width: 66px
+				height: 10px
+				margin-bottom: 2px
+				background: url('../img/svg/wave.svg') no-repeat center
+			+r(991)
+				top: initial
+				bottom: 280px
+				right: 0
+			+r(767)
+				display: none
