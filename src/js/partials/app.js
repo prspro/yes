@@ -19,12 +19,12 @@ $(document).on("click", function(e) {
     const overlay = $("#js_overlay");
 
     //noScroll.on();
-    noScroll.toggle();
-
+    
     if (id === "js_overlay" || id === "js_popup-close" || id === "js_btn") {
         overlay.fadeToggle();
         //console.log(overlay)
         //noScroll.toggle();
+        noScroll.toggle();
     }
     //console.log(c[0].className)
 });
