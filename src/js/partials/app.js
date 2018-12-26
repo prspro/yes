@@ -17,10 +17,14 @@ $(document).ready(function(){
 $(document).on("click", function(e) {
     const id = e.target.id;
     const overlay = $("#js_overlay");
-        
+
+    //noScroll.on();
+    noScroll.on();
+
     if (id === "js_overlay" || id === "js_popup-close" || id === "js_btn") {
         overlay.fadeToggle();
         //console.log(overlay)
+        //noScroll.toggle();
     }
     //console.log(c[0].className)
 });
