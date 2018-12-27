@@ -11,7 +11,7 @@ $(document).ready(function(){
         slidesToScroll: 1,  
         adaptiveHeight: true    
     });
-    $('.phn-number').mask('+0(000)000-000-0000');
+    $('.phn-number').mask('+0(000)000-000-0000',{placeholder: "+_( _ _ _ ) _ _ _ - _ _ _ - _ _ _ _"});
 });
 
 $(document).on("click", function(e) {
