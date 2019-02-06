@@ -10,7 +10,16 @@
 	text-align: center
 	background: url('../img/bus2.png') no-repeat 
 	background-position: left calc(50% - 270px) top 140px
+	+r(1199)
+		background-position: left calc(50% - 370px) top 160px
 	+r(991)
+		//height: 488px
+		//width: 365px
+		background-size: 365px 395px
+		background-position: left calc(50% - 255px) top 125px
+		//bottom: 10px
+		//left: -55px		
+	//+r(991)
 		margin-bottom: 0
 		padding-bottom: 65px
 	.logo
@@ -39,7 +48,8 @@
 		transform: translateX(-50%)
 		letter-spacing: 4px
 		+r(991)
-			top: 150px
+			top: 160px
+			padding-right: 80px
 		+r(767)
 			display: none
 		.bigger
