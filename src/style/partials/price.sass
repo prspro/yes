@@ -1,9 +1,21 @@
 .price
 	padding-bottom: 210px
+	padding-top: 145px
 	overflow-x: hidden
+	background: url('../img/bigben.png') no-repeat
+	background-position: left calc(50% - 600px) top 0px
+	+r(1199)
+		background-position: left calc(50% - 650px) top 35px
+	+r(991)
+		background-position: left calc(50% - 585px) top 23px
+		background-size: 612px 881px
+		padding-top: 60px
 	+r(767)
 		text-align: center
 		padding-bottom: 60px
+		padding-top: 427px
+		background-size: 269px 388px
+		background-position: left calc(50% - 25px) top 0px
 	.container
 		.contnt
 			display: flex
@@ -13,44 +25,21 @@
 			.img-part
 				//margin-right: 30px
 				position: relative
-				+r(767)
-					margin-bottom: 35px
-				.img
-					height: 1078px
-					width: 749px
-					background: url('../img/bigben.png') no-repeat center
-					top: 0
-					right: 0
-					transform: translate(-50px, -145px)
-					//content: ""
-					position: absolute
-					//display: inline-block
-					+r(991)
-						height: 881px
-						width: 612px
-						background-size: cover
-						top: initial
-						bottom: 0
-						transform: translate(-50px, 70px)
-					+r(767)
-						position: static
-						display: inline-block
-						height: 388px
-						width: 269px
-						transform: translateX(-25px)
-				&::after
-					content: ""
+				.wave
 					position: absolute
 					height: 19px	
 					width: 145px
 					background: url('../img/svg/wave.svg') no-repeat center
-					top: 50%
 					right: 0
-					transform: translate(-55px, 180px)	
+					top: 0
+					transform: translate(-50px, 605px)
+					+r(991)
+						transform: translate(-40px, 605px)
 					+r(767)
-						width: 90px
-						height: 13px
-						transform: translate(-20px, 30px)
+						right: 50%
+						transform: translate(130px, -200px)
+						height: 13px	
+						width: 92px
 				.circle-gray
 					z-index: -2
 					position: absolute
@@ -67,7 +56,7 @@
 						border: 40px solid $pseudoGrayBg
 						top: 50%
 						right: 50%
-						transform: translate(50%, -50%)
+						transform: translate(50%, -330px)
 				.circle-blue
 					z-index: -1
 					position: absolute
@@ -81,8 +70,9 @@
 					+r(767)
 						width: 62px
 						height: 62px
+						right: 50%
 						border: 12px solid $pseudoBlueBg
-						transform: translate(-180px, 70px)
+						transform: translate(-45px, -345px)
 			.text-part
 				max-width: 750px
 				//margin-left: auto
