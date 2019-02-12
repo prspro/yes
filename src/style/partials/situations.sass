@@ -5,6 +5,7 @@
     //background-size: cover
     //background-position: top 0 left calc(50% - 300px)
     //
+    overflow-x: hidden
     position: relative
     &::after
         z-index: -5
@@ -14,9 +15,13 @@
         border-radius: 100%/100%
         top: 0
         bottom: 50px
-        left: -500px
-        right: -500px
-        transform: translateX(-300px)
+        width: 3494px
+        //left: -500px
+        //right: -500px
+        left: 50%
+        transform: translateX(-50%) translateX(-300px)
+        +r(1199)
+            transform: translateX(-50%)
     z-index: 0
     +r(991)
         background-position: top 0 left 50%

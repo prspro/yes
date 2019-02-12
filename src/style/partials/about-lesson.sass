@@ -1,11 +1,26 @@
 .about
 	overflow-x: hidden
 	padding:  40px 0 375px 0 
-	background: url('../img/ellipse_bg2.png') no-repeat center
-	//background-position: 50% 200px
-	background-size: cover
+	//
+	//background: url('../img/ellipse_bg2.png') no-repeat center
+	//background-size: cover
 	position: relative
 	z-index: 0
+	&::after
+		z-index: -5
+		content: ''
+		position: absolute
+		top: 0
+		bottom: 0
+		//left: -50px
+		//right: -50px
+		width: 2035px
+		left: 50%
+		transform: translateX(-50%) translateX(-50px)
+		border-radius: 100%/100%
+		background-color: $pseudoGrayBg
+		+r(991)
+			transform: translateX(-50%)
 	+r(991)
 		padding-bottom: 190px
 	+r(767)
