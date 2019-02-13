@@ -1,10 +1,13 @@
-.situations
-    padding: 210px 0 270px 0
+.situations-predictions
+    padding: 210px 0 0 0
+    margin-bottom: 270px
     //
     //background: url('../img/ellipse_bg.png') no-repeat 
     //background-size: cover
     //background-position: top 0 left calc(50% - 300px)
     //
+    background: url('../img/photo.png') no-repeat
+    background-position: right calc(50% - 570px) bottom 0
     overflow-x: hidden
     position: relative
     &::after
@@ -14,21 +17,29 @@
         background-color: $pseudoGrayBg
         border-radius: 100%/100%
         top: 0
-        bottom: 50px
+        //bottom: 50px
         width: 3494px
+        height: 2130px
         //left: -500px
         //right: -500px
         left: 50%
         transform: translateX(-50%) translateX(-300px)
         +r(1199)
             transform: translateX(-50%)
-    z-index: 0
-    +r(991)
-        background-position: top 0 left 50%
-        padding-bottom: 220px
+        +r(991)
+            height: 1950px
+    //z-index: 0
+    +r(1199)
+        background-size: 611px 365px
+        background-position: right calc(50% - 530px) bottom 50px
+        margin-bottom: 220px
         padding-top: 130px
+    +r(991)
+        background-position: right calc(50% - 500px) bottom 20px
     +r(767)
-        padding: 80px 0 95px 0
+        padding: 80px 0 0 0
+        margin-bottom: 95px
+        background: none
     .title
         z-index: 5
         font-family: $GilroyExtraBold
@@ -233,11 +244,13 @@
                         width: 290px
                         height: 429px
         &--4
-            //margin-bottom: 375px
+            margin-bottom: 490px
             justify-content: flex-start
+            +r(991)
+                margin-bottom: 350px
             +r(767)
                 flex-direction: column-reverse
-                margin-bottom: 0
+                margin-bottom: 100px
             .txt
                 max-width: 290px
                 //margin-right: 30px
@@ -265,3 +278,78 @@
                     +r(767)
                         width: 290px
                         height: 153px
+    .title-2
+        font-family: $GilroyExtraBold
+        font-size: 45px
+        line-height: 1.2
+        text-transform: uppercase
+        max-width: 500px
+        position: relative
+        margin-bottom: 110px
+        +r(991)
+            font-size: 30px
+            max-width: 330px
+            margin-bottom: 100px
+            margin-left: auto
+            margin-right: auto
+        +r(767)
+            font-size: 24px
+            margin-bottom: 70px
+            text-align: center
+        &::after
+            content: ""
+            position: absolute
+            width: 64px
+            height: 7px
+            background-color: $pseudoRedBg
+            left: 4px
+            bottom: -40px
+            +r(991)
+                bottom: -35px
+            +r(767)
+                left: 50%
+                transform: translateX(-50%)
+                bottom: -15px
+    .col
+        display: inline-block
+        padding: 0 15px
+        font-size: 18px
+        letter-spacing: 0.5px
+        margin-right: 30px
+        +r(991)
+            font-size: 16px
+            padding: 0
+        +r(767)
+            margin-right: 0
+            margin-bottom: 50px
+            display: block
+            text-align: center
+        &:last-of-type
+            margin-right: 0
+        &__title
+            font-family: $GilroyExtraBold
+            margin-bottom: 15px
+            position: relative
+            +r(767)
+                text-align: center
+            &::after
+                z-index: -1
+                content: ""
+                position: absolute
+                height: 50px
+                width: 50px
+                background-color: $pseudoGrayBg
+                border-radius: 50%
+                top: 0
+                left: 0
+                transform: translate(-50%, -50%)
+                +r(767)
+                    left: 50%
+                    //transform: translate(-50%, -50%)
+        &__text
+            display: inline-block
+            font-family: $GilroyLight
+            line-height: 1.4
+            max-width: 240px
+            +r(991)
+                max-width: 220px
