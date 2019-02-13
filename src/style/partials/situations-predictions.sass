@@ -1,16 +1,15 @@
 .situations-predictions
-    padding: 210px 0 0 0
-    margin-bottom: 270px
+    padding: 210px 0 150px 0
     //
     //background: url('../img/ellipse_bg.png') no-repeat 
     //background-size: cover
     //background-position: top 0 left calc(50% - 300px)
     //
     background: url('../img/photo.png') no-repeat
-    background-position: right calc(50% - 570px) bottom 0
+    background-position: right calc(50% - 570px) bottom 150px
     overflow-x: hidden
     position: relative
-    &::after
+    &::before
         z-index: -5
         content: ""
         position: absolute
@@ -28,17 +27,29 @@
             transform: translateX(-50%)
         +r(991)
             height: 1950px
+    &::after
+        content: ""
+        position: absolute
+        width: 145px
+        height: 19px
+        left: 50%
+        bottom: 0
+        bottom: 10px
+        transform: translate(200px, 0)
+        background: url('../img/svg/wave.svg') no-repeat center
+        +r(767)
+            display: none
     //z-index: 0
     +r(1199)
         background-size: 611px 365px
-        background-position: right calc(50% - 530px) bottom 50px
-        margin-bottom: 220px
+        background-position: right calc(50% - 530px) bottom 200px
+        //margin-bottom: 220px
         padding-top: 130px
     +r(991)
-        background-position: right calc(50% - 500px) bottom 20px
+        background-position: right calc(50% - 500px) bottom 170px
     +r(767)
-        padding: 80px 0 0 0
-        margin-bottom: 95px
+        padding: 80px 0 95px 0
+        //margin-bottom: 95px
         background: none
     .title
         z-index: 5
