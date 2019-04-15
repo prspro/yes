@@ -235,7 +235,7 @@ gulp.task("style:deploy", function() {
 });
 
 gulp.task("image:build", function() {
-  gulp
+  return gulp
     .src(path.src.img)
     .pipe(gulp.dest(path.build.img))
     .pipe(
@@ -245,7 +245,7 @@ gulp.task("image:build", function() {
     );
 });
 gulp.task("image:deploy", function() {
-  gulp
+  return gulp
     .src(path.build.img + "/**/*.*")
     .pipe(
       imagemin({
